@@ -90,7 +90,7 @@ Here we are creating Machine Learning Pipelines considering all the life cycle o
 10. Check correlation 
 
 
-## Here we are doing all handling, in EDA We just visualized it, not done any transformation. Here we are doing transformation in final dataset
+## Feature Engineering
 
 ### 1. Before Train and test  merge:
 
