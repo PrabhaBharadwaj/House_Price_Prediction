@@ -128,7 +128,12 @@ Here we are creating Machine Learning Pipelines considering all the life cycle o
 
 - Applied Different Models and identified xgboost is the best model with low error and high R2
 
-- Submissions are evaluated on Root-Mean-Squared-Error (RMSE) and RMSLE between the logarithm of the predicted value and the logarithm of the observed sales price.
+
+## 6.  Conclusion
+
+- We tried most of the Regression algorithm, and found 2 model (XGBoost and LightGBM ) having less errors(MAE, MSE,RMSE,RMSLE) and high R2
+- So we are finalizing our model with XGBoost and applying same model for Kaggle's Test dataset
+- Final Submissions are evaluated on Root-Mean-Squared-Error (RMSE) and RMSLE between the logarithm of the predicted value and the logarithm of the observed sales price.
 
 - Uplaoded this final submission file in kaggle
 
