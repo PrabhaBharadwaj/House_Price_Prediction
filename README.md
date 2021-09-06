@@ -33,13 +33,30 @@
             etc.
 
 
+## Lifecycle In A Data Science Projects
+1. Data Analysis(EDA)/ Data Cleaning
+2. Feature Engineering 
+    - Null Handling,Outlier Handling, Numeric and Categorical feature handling, Sacling
+3. Feature Selection
+4. Model Building
+5. Model Evaluation
+6. Finalize Best model
+7. Apply same model to Test data, Rescale O/P back and Create Final Submission file
+5. Upload Final Submission file in Kaggle or Model Deployment 
 
-#### Dataset to downloaded from the below link
+## Splitted these activities into 2 sets
+
+1. This notepad will do all activities till preprocessing and Feature selctionIn 
+2. "House_Price_Prediction_Model_Training_2" Notepad will do all Model build, evaluation and Final submission file cration
+
+
+
+## 1. Dataset to downloaded from the below link
 https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
 
 
 
-## Building Machine Learning Pipelines: Data Analysis Phase
+## 2. Building Machine Learning Pipelines: Data Analysis Phase
 
 Here we are creating Machine Learning Pipelines considering all the life cycle of a Data Science Projects. 
 
@@ -60,24 +77,9 @@ Here we are creating Machine Learning Pipelines considering all the life cycle o
           13. lightgbm
           14. Artificial Neaural Networks
 
-## Lifecycle In A Data Science Projects
-1. Data Analysis(EDA)/ Data Cleaning
-2. Feature Engineering 
-    - Null Handling,Outlier Handling, Numeric and Categorical feature handling, Sacling
-3. Feature Selection
-4. Model Building
-5. Model Evaluation
-6. Finalize Best model
-7. Apply same model to Test data, Rescale O/P back and Create Final Submission file
-5. Upload Final Submission file in Kaggle or Model Deployment 
 
-## Splitted these activities into 2 sets
-
-1. This notepad will do all activities till preprocessing and Feature selctionIn 
-2. "House_Price_Prediction_Model_Training_2" Notepad will do all Model build, evaluation and Final submission file cration
-
-
-#### In Data Analysis We will Analyze To Find out the below stuff
+## 3. Data Analysis - EDA
+### In Data Analysis We will Analyze To Find out the below stuff
 1. Check any Missing Values
 2. All The Numerical Variables
 3. Temporal Variables(Eg: Datetime Variables)¶
@@ -90,7 +92,7 @@ Here we are creating Machine Learning Pipelines considering all the life cycle o
 10. Check correlation 
 
 
-## Feature Engineering
+## 4. Feature Engineering
 
 ### 1. Before Train and test  merge:
 
@@ -101,7 +103,7 @@ Here we are creating Machine Learning Pipelines considering all the life cycle o
 [ **This train test merge and apply all FE only done in kaggle kind competation. In real world scenario, we wont be knowing test  and leads to data leakage also**]
 
 
-## 2. After Train and test  merge:
+### 2. After Train and test  merge:
 - We will be performing all the below steps in Feature Engineering
 
 1. Missing values Handling
@@ -121,6 +123,14 @@ Here we are creating Machine Learning Pipelines considering all the life cycle o
     test.csv - the test set
     data_description.txt - full description of each column, originally prepared by Dean De Cock but lightly edited to match the column names used here
     sample_submission.csv - a benchmark submission from a linear regression on year and month of sale, lot square footage, and number of bedrooms
+
+## 5.  Model Training
+
+- Applied Different Models and identified xgboost is the best model with low error and high R2
+
+- Submissions are evaluated on Root-Mean-Squared-Error (RMSE) and RMSLE between the logarithm of the predicted value and the logarithm of the observed sales price.
+
+- Uplaoded this final submission file in kaggle
 
 
 ## Data fields
